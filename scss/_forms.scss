@@ -26,7 +26,11 @@ form {
   }
   // Test in FF
   select {
-    option {}
+    option {
+      background-color: $light-gray;
+      color: $dark-gray;
+      @include border-box;
+    }
   }
   input[type="radio"] {}
 }
