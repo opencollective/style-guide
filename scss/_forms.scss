@@ -1,5 +1,12 @@
 // _forms.scss
 
+.button {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  @include border-radius(5px);
+}
+
 form {
   input[type="text"], input[type="textarea"] {
     background-color: $light-gray;
@@ -8,5 +15,19 @@ form {
     @include border-box;
     @include border-radius(5px);
   }
+  button, input[type="submit"] {
+    @extend .button
+    &.cancel {
+      background-color: $red;
+    }
+    &.send {
+      background-color: $green;
+    }
+  }
+  // Test in FF
+  select {
+    option {}
+  }
+  input[type="radio"] {}
 }
 

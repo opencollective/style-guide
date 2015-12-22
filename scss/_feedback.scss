@@ -1,2 +1,16 @@
 // _feedback.scss
 
+.banner {
+  color: white;
+  @include border-box;
+  .error {
+    background-color: $red;
+  }
+  .notice {
+    background-color: $yellow;
+  }
+  .success {
+    background-color: $green;
+  }
+}
+

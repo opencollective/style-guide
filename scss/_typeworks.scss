@@ -1,5 +1,26 @@
 // _typeworks.scss
 
+@include font-face('bold', 'bold', 'proxima-nova', 'sans-serif');
+@include font-face('italic', 'italic', 'proxima-nova', 'sans-serif');
+@include font-face('semibold', 'semibold', 'proxima-nova', 'sans-serif');
+@include font-face('regular', 'regular', 'proxima-nova', 'sans-serif');
+
+@mixin regular {
+    font-family: 'regular', sans-serif;
+}
+
+@mixin italic {
+    font-family: 'italic', sans-serif;
+}
+
+@mixin semibold {
+    font-family: 'semibold', sans-serif;
+}
+
+@mixin bold {
+    font-family: 'bold', sans-serif;
+}
+
 // TODO: Add font assets
 h1 {
 }
