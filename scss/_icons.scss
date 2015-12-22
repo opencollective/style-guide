@@ -1,0 +1,86 @@
+// _icons.scss
+
+
+//TODO: Add font assets
+@font-face {
+  font-family: "opencollective";
+  src:url("fonts/opencollective.eot");
+  src:url("fonts/opencollective.eot?#iefix") format("embedded-opentype"),
+    url("fonts/opencollective.woff") format("woff"),
+    url("fonts/opencollective.ttf") format("truetype"),
+    url("fonts/opencollective.svg#opencollective") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "opencollective";
+  content: attr(data-icon);
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "opencollective";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-upload:before {
+  content: "a";
+}
+.icon-up:before {
+  content: "b";
+}
+.icon-right:before {
+  content: "c";
+}
+.icon-add:before {
+  content: "d";
+}
+.icon-approved:before {
+  content: "e";
+}
+.icon-down:before {
+  content: "i";
+}
+.icon-left:before {
+  content: "j";
+}
+.icon-pending:before {
+  content: "l";
+}
+.icon-rejected:before {
+  content: "p";
+}
+.icon-loading:before {
+  content: "f";
+}
+.icon-oc-icon:before {
+  content: "g";
+}
+.icon-upload-photo:before {
+  content: "h";
+}
+.icon-camera:before {
+  content: "k";
+}
+.icon-gear:before {
+  content: "m";
+}
+.icon-user:before {
+  content: "n";
+}
+.icon-password:before {
+  content: "o";
+}

@@ -1,0 +1,12 @@
+// _forms.scss
+
+form {
+  input[type="text"], input[type="textarea"] {
+    background-color: $light-gray;
+    color: $dark-gray;
+    font-style: italic;
+    @include border-box;
+    @include border-radius(5px);
+  }
+}
+
