@@ -1,2 +1,20 @@
 // _lists.scss
 
+nav {
+  ul {
+    text-transform: uppercase;
+    li {
+      display: inline;
+      margin-right: 60px;
+      font-size: .7rem;
+      a {
+        text-decoration: none;
+        &.active, &:hover {
+          text-decoration: underline;
+          color: $light-blue;
+          @include transition;
+        }
+      }
+    }
+  }
+}

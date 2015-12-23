@@ -12,6 +12,8 @@ body {
 
 .container {
   background-color: white;
+  padding: 1rem;
+  @include border-box;
 }
 
 aside {
@@ -19,7 +21,7 @@ aside {
   background-color: white;
   height: 100%;
   width: 30%;
-  padding: 6%;
+  padding: 1rem;
   @include border-box;
   @include box-shadow;
 }
@@ -27,6 +29,6 @@ aside {
 article {
   width: 70%;
   margin-left: 30%;
-  padding: 6%;
+  padding: 1rem;
   @include border-box;
 }

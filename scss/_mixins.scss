@@ -20,6 +20,19 @@
   box-shadow: 0 0 1px 1px rgba(0,0,0,.20);
 }
 
+@mixin transition {
+  -webkit-transition: all 230ms ease-in;
+  -moz-transition: all 230ms ease-in;
+  -ms-transition: all 230ms ease-in;
+  -o-transition: all 230ms ease-in;
+  transition: all 230ms ease-in;
+}
+
+@mixin appeareance {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 @mixin font-face($style-name, $file, $family, $category:"") {
   $filepath: "../fonts/" + $family + "/" + $file;
   @font-face {

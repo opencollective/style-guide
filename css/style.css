@@ -144,16 +144,32 @@ p {
 
 .button, form button, form input[type="submit"] {
   color: white;
-  font-weight: bold;
   text-transform: uppercase;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border: 0 none;
+  background-color: #F9FAFA;
+  font-family: 'bold', sans-serif;
+  box-sizing: border-box;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   border-radius: 5px; }
 
 form input[type="text"], form textarea  {
   background-color: #F9FAFA;
   color: #7A7B82;
-  font-style: italic;
+  border: 0 none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-family: 'regular', sans-serif;
   box-sizing: border-box;
-  border-radius: 5px; }
+  border-radius: 2px; }
+  form input[type="text"]::-webkit-input-placeholder, form textarea ::-webkit-input-placeholder {
+    font-family: 'italic', sans-serif; }
+  form input[type="text"]::-moz-placeholder, form textarea ::-moz-placeholder {
+    font-family: 'italic', sans-serif; }
+  form input[type="text"]:-ms-input-placeholder, form textarea :-ms-input-placeholder {
+    font-family: 'italic', sans-serif; }
 form button.cancel, form input[type="submit"].cancel {
   background-color: #dd2663; }
 form button.send, form input[type="submit"].send {
@@ -162,6 +178,20 @@ form select option {
   background-color: #F9FAFA;
   color: #7A7B82;
   box-sizing: border-box; }
+
+nav ul {
+  text-transform: uppercase; }
+  nav ul li {
+    display: inline;
+    margin-right: 60px;
+    font-size: .7rem; }
+    nav ul li a {
+      text-decoration: none; }
+      nav ul li a.active, nav ul li a:hover {
+        text-decoration: underline;
+        color: #7FADF2;
+        -webkit-transition: all 230ms ease-in;
+        transition: all 230ms ease-in; }
 
 @font-face {
   font-family: "opencollective";
@@ -256,19 +286,21 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 .container {
-  background-color: white; }
+  background-color: white;
+  padding: 1rem;
+  box-sizing: border-box; }
 
 aside {
   position: fixed;
   background-color: white;
   height: 100%;
   width: 30%;
-  padding: 6%;
+  padding: 1rem;
   box-sizing: border-box;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2); }
 
 article {
   width: 70%;
   margin-left: 30%;
-  padding: 6%;
+  padding: 1rem;
   box-sizing: border-box; }

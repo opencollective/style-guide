@@ -1,9 +1,14 @@
 // _forms.scss
-
 .button {
   color: white;
-  font-weight: bold;
   text-transform: uppercase;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border: 0 none;
+  background-color: $light-gray;
+  @include bold;
+  @include border-box;
+  @include appeareance;
   @include border-radius(5px);
 }
 
@@ -11,10 +16,22 @@ form {
   input[type="text"], textarea {
     background-color: $light-gray;
     color: $dark-gray;
-    font-style: italic;
+    border: 0 none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    @include regular;
     @include border-box;
-    @include border-radius(5px);
-  }
+    @include border-radius(2px);
+    &::-webkit-input-placeholder {
+      @include italic;
+    }
+    &::-moz-placeholder {  
+     @include italic;
+   }
+   &:-ms-input-placeholder {  
+     @include italic;
+   }
+  } //text & textarea
   button, input[type="submit"] {
     @extend .button;
     &.cancel {
