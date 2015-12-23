@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 98%; }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: var(1%);
+  margin-left: var(1%); }
+
+.col-0 {
+  width: 0%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%; }
+
+.col-1 {
+  width: 0%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%; }
+
+.col-2 {
+  width: 0%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%; }
+
+.col-3 {
+  width: 0%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%; }
+
+.col-4 {
+  width: 0%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%; }
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/Proxima Nova/bold.eot");
+  src: url("../fonts/Proxima Nova/bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova/bold.woff") format("woff"), url("../fonts/Proxima Nova/bold.woff2") format("woff"), url("../fonts/Proxima Nova/bold.ttf") format("truetype"), url("../fonts/Proxima Nova/bold.svg#bold") format("svg"); }
+@font-face {
+  font-family: "italic";
+  src: url("../fonts/Proxima Nova/italic.eot");
+  src: url("../fonts/Proxima Nova/italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova/italic.woff") format("woff"), url("../fonts/Proxima Nova/italic.woff2") format("woff"), url("../fonts/Proxima Nova/italic.ttf") format("truetype"), url("../fonts/Proxima Nova/italic.svg#italic") format("svg"); }
+@font-face {
+  font-family: "semibold";
+  src: url("../fonts/Proxima Nova/semibold.eot");
+  src: url("../fonts/Proxima Nova/semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova/semibold.woff") format("woff"), url("../fonts/Proxima Nova/semibold.woff2") format("woff"), url("../fonts/Proxima Nova/semibold.ttf") format("truetype"), url("../fonts/Proxima Nova/semibold.svg#semibold") format("svg"); }
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/Proxima Nova/regular.eot");
+  src: url("../fonts/Proxima Nova/regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova/regular.woff") format("woff"), url("../fonts/Proxima Nova/regular.woff2") format("woff"), url("../fonts/Proxima Nova/regular.ttf") format("truetype"), url("../fonts/Proxima Nova/regular.svg#regular") format("svg"); }
+html, body {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: 'regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-family: 'bold', sans-serif; }
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  font-family: 'bold', sans-serif; }
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'bold', sans-serif; }
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: 'regular', sans-serif; }
+  p.meta {
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase; }
+
+.button, form button, form input[type="submit"] {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px; }
+
+form input[type="text"], form textarea  {
+  background-color: #F9FAFA;
+  color: #7A7B82;
+  font-style: italic;
+  box-sizing: border-box;
+  border-radius: 5px; }
+form button.cancel, form input[type="submit"].cancel {
+  background-color: #dd2663; }
+form button.send, form input[type="submit"].send {
+  background-color: #80d823; }
+form select option {
+  background-color: #F9FAFA;
+  color: #7A7B82;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "opencollective";
+  src: url("fonts/opencollective.eot");
+  src: url("fonts/opencollective.eot?#iefix") format("embedded-opentype"), url("fonts/opencollective.woff") format("woff"), url("fonts/opencollective.ttf") format("truetype"), url("fonts/opencollective.svg#opencollective") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "opencollective";
+  content: attr(data-icon);
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "opencollective";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-upload:before {
+  content: "a"; }
+
+.icon-up:before {
+  content: "b"; }
+
+.icon-right:before {
+  content: "c"; }
+
+.icon-add:before {
+  content: "d"; }
+
+.icon-approved:before {
+  content: "e"; }
+
+.icon-down:before {
+  content: "i"; }
+
+.icon-left:before {
+  content: "j"; }
+
+.icon-pending:before {
+  content: "l"; }
+
+.icon-rejected:before {
+  content: "p"; }
+
+.icon-loading:before {
+  content: "f"; }
+
+.icon-oc-icon:before {
+  content: "g"; }
+
+.icon-upload-photo:before {
+  content: "h"; }
+
+.icon-camera:before {
+  content: "k"; }
+
+.icon-gear:before {
+  content: "m"; }
+
+.icon-user:before {
+  content: "n"; }
+
+.icon-password:before {
+  content: "o"; }
+
+.banner {
+  color: white;
+  box-sizing: border-box; }
+  .banner .error {
+    background-color: #dd2663; }
+  .banner .notice {
+    background-color: #ffd62c; }
+  .banner .success {
+    background-color: #80d823; }
+
+body {
+  background-color: #F9FAFA;
+  color: #7A7B82;
+  font-size: 16px;
+  font-family: 'regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container {
+  background-color: white; }
+
+aside {
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  padding: 6%;
+  box-sizing: border-box;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+article {
+  width: 70%;
+  margin-left: 30%;
+  padding: 6%;
+  box-sizing: border-box; }

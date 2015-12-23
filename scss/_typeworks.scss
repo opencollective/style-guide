@@ -1,9 +1,9 @@
 // _typeworks.scss
 
-@include font-face('bold', 'bold', 'proxima-nova', 'sans-serif');
-@include font-face('italic', 'italic', 'proxima-nova', 'sans-serif');
-@include font-face('semibold', 'semibold', 'proxima-nova', 'sans-serif');
-@include font-face('regular', 'regular', 'proxima-nova', 'sans-serif');
+@include font-face('bold', 'bold', 'Proxima Nova', 'sans-serif');
+@include font-face('italic', 'italic', 'Proxima Nova', 'sans-serif');
+@include font-face('semibold', 'semibold', 'Proxima Nova', 'sans-serif');
+@include font-face('regular', 'regular', 'Proxima Nova', 'sans-serif');
 
 @mixin regular {
     font-family: 'regular', sans-serif;
@@ -21,25 +21,42 @@
     font-family: 'bold', sans-serif;
 }
 
-// TODO: Add font assets
+html, body {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  @include regular;
+  @include font-smoothing;
+}
+
 h1 {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  @include bold;
 }
 
 h2 {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  @include bold;
 }
 
 h3 {
-}
-
-h4 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  @include bold;
 }
 
 p {
-}
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  @include regular;
 
-a {
-}
+  &.meta {
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+  }
 
-code {
 }
-

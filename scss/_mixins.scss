@@ -15,8 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@mixin box-shadow {
+  -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,.20);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.20);
+}
+
 @mixin font-face($style-name, $file, $family, $category:"") {
-  $filepath: "/fonts/" + $family + "/" + $file;
+  $filepath: "../fonts/" + $family + "/" + $file;
   @font-face {
     font-family: $style-name;
     src: url($filepath + ".eot");

@@ -1,0 +1,32 @@
+// _main.scss
+
+// This is the stylesheet that gives style to the guide.
+
+body {
+  background-color: $light-gray;
+  color: $dark-gray;
+  font-size: 16px;
+  @include regular;
+  @include font-smoothing;
+}
+
+.container {
+  background-color: white;
+}
+
+aside {
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  padding: 6%;
+  @include border-box;
+  @include box-shadow;
+}
+
+article {
+  width: 70%;
+  margin-left: 30%;
+  padding: 6%;
+  @include border-box;
+}
