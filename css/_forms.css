@@ -12,7 +12,7 @@ Error: Undefined variable: "$light-gray".
 10:   @include border-box;
 11:   @include appeareance;
 12:   @include border-radius(5px);
-13: }
+13:   &.cancel {
 
 Backtrace:
 /Users/bleedingxedge/Desktop/OpenCollective/style-guide/scss/_forms.scss:8
@@ -59,4 +59,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-gray\".\A         on line 8 of /Users/bleedingxedge/Desktop/OpenCollective/style-guide/scss/_forms.scss\A \A 3:   color: white;\A 4:   text-transform: uppercase;\A 5:   padding: .5rem 1rem;\A 6:   font-size: 1.5rem;\A 7:   border: 0 none;\A 8:   background-color: $light-gray;\A 9:   @include bold;\A 10:   @include border-box;\A 11:   @include appeareance;\A 12:   @include border-radius(5px);\A 13: }"; }
+  content: "Error: Undefined variable: \"$light-gray\".\A         on line 8 of /Users/bleedingxedge/Desktop/OpenCollective/style-guide/scss/_forms.scss\A \A 3:   color: white;\A 4:   text-transform: uppercase;\A 5:   padding: .5rem 1rem;\A 6:   font-size: 1.5rem;\A 7:   border: 0 none;\A 8:   background-color: $light-gray;\A 9:   @include bold;\A 10:   @include border-box;\A 11:   @include appeareance;\A 12:   @include border-radius(5px);\A 13:   &.cancel {"; }

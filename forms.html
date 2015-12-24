@@ -20,7 +20,7 @@
       <li>Animation</li>
     </ul>
   </aside>
-  <article>
+  <section>
     <div class="container">
       <h1>Form elements</h1>
       <nav>
@@ -32,27 +32,64 @@
           <li><a>ON/OFF Switches</a></li>
         </ul>
       </nav>
-      <section>
+      <article>
         <h2>Text Inputs</h2>
         <form>
           <input type="text" placeholder="omgsample">
         </form>
-      </section>
-      <section>
+      </article>
+      <article>
         <h2>Buttons</h2>
-        <input type="submit" value="Green" class="button send">
-        <input type="submit" value="Red" class="button cancel">
-      </section>
-      <section>
+        <form>
+          <input type="submit" value="Green" class="button send">
+          <input type="submit" value="Red" class="button cancel">
+        </form>
+      </article>
+      <article>
         <h2>Select</h2>
-      </section>
-      <section>
-        <h2>Radio & Checkboxes</h2>
-      </section>
-      <section>
+        <form>
+          <select>
+            <optgroup label="Adorable Animals">
+              <option>Kittens</option>
+              <option>Puppies</option>
+              <option>Pandas</option>
+            </optgroup>
+            <optgroup label="Not so cute animals">
+              <option>Crocodile</option>
+              <option>Hyena</option>
+              <option>Condor</option>
+            </optgroup>
+          </select>
+        </form>
+      </article>
+      <article>
+        <h2>Radio Buttons</h2>
+        <form>
+          <input type="radio" class="" disabled>
+          <input type="radio" class="">
+          <input type="radio" class="focus">
+          <input type="radio" class="hover">
+          <input type="radio" class="focus active">
+        </form>
+        <form>
+          <input type="radio" checked class="" disabled>
+          <input type="radio" checked class="">
+          <input type="radio" checked class="focus">
+          <input type="radio" checked class="hover">
+          <input type="radio" checked class="focus active">
+        </form>
+      </article>
+      <article>
         <h2>ON/OFF Switch</h2>
-      </section>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+          <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </article>
     </div>
-  </article>
+  </section>
 </body>
 </html>
