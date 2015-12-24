@@ -42,18 +42,45 @@ form {
     border: 0 none;
     font-size: 1.2rem;
     padding: 1rem;
+    margin-top: .5rem;
+    min-width: 50%;
     @include regular;
     @include border-box;
     @include border-radius(2px);
+    @include transition;
+    border: 1px solid transparent; //to make transition smooth and avoid jumpyness
     &::-webkit-input-placeholder {
       @include italic;
     }
     &::-moz-placeholder {  
-     @include italic;
-   }
-   &:-ms-input-placeholder {  
-     @include italic;
-   }
+      @include italic;
+    }
+    &:-ms-input-placeholder {  
+      @include italic;
+    }
+    &:disabled {
+      background-color: $gray;
+    }
+    &:focus, &.focus {
+      border: 1px solid $light-blue;
+      outline: 0;
+    }
+    &:active, &.active {
+      @include active;
+    }
+    &:hover, &.hover {
+      color: $light-blue;
+      border: 1px solid $light-blue;
+      &::-webkit-input-placeholder {
+      color: $light-blue;
+      }
+      &::-moz-placeholder {  
+        color: $light-blue;
+      }
+      &:-ms-input-placeholder {  
+        color: $light-blue;
+      }
+    }
   } //text & textarea
   button, input[type="submit"] {
     @extend .button;
@@ -70,6 +97,10 @@ form {
     @include border-radius(2px);
     background: $light-gray url('../assets/dd-caret.svg') no-repeat 95% 50%;
     background-size: 10%;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid $light-blue;
+    }
     optgroup {
       padding: 1rem;
       @include appearance;
@@ -115,62 +146,58 @@ input[type="radio"]::after {
 input[type="radio"] {
   background: white;
   border: 1px solid $gray;
+  &::after {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+  }
+  &:hover, &.hover {
+    background: $light-gray;
+    @include active;
+  }
+  &:focus, &.focus {
+    outline: none;
+    @include active;
+  }
+  &:active, &.active {
+    background: white;
+    border: 1px solid $light-blue;
+    @include active;
+  }
+  &:disabled {
+    box-shadow: none;
+    background: $light-gray;
+    border: 1px solid $gray;
+  }
+  &:checked {
+    background: white;
+    border: 1px solid $light-gray;
+    &:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+    }
+    &:hover, &.hover {
+      background: white;
+      border: 1px solid $light-blue;
+      @include active;
+    }
+    &:focus, &.focus {
+      border: 1px solid $gray;
+    }
+    &:active, &.active {
+      background: white;
+      border: 1px solid $light-blue;
+      @include active;
+    }
+    &:disabled {
+      opacity: 0.3;
+      box-shadow: none;
+      background: $gray;
+      border: 1px solid $gray;
+    }
+  }
 }
-input[type="radio"]::after {
-  opacity: 0;
-  -webkit-transform: scale(1.25);
-}
-input[type="radio"]:hover,
-input[type="radio"].hover {
-  background: $light-gray;
-  @include active;
-}
-input[type="radio"]:focus,
-input[type="radio"].focus {
-  outline: none;
-  @include active;
-}
-input[type="radio"]:active,
-input[type="radio"].active {
-  background: white;
-  border: 1px solid $light-blue;
-  @include active;
-}
-input[type="radio"]:checked {
-  background: white;
-  border: 1px solid $light-gray;
-}
-input[type="radio"]:checked::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-}
-input[type="radio"]:checked:hover,
-input[type="radio"]:checked.hover {
-  background: white;
-  border: 1px solid $light-blue;
-  @include active;
-}
-input[type="radio"]:checked:focus,
-input[type="radio"]:checked.focus {
-  border: 1px solid $gray;
-}
-input[type="radio"]:checked:active,
-input[type="radio"]:checked.active {
-  background: white;
-  border: 1px solid $light-blue;
-  @include active;
-}
-input[type="radio"]:disabled {
-  box-shadow: none;
-  background: $light-gray;
-  border: 1px solid $gray;
-}
-input[type="radio"]:checked:disabled {
-  opacity: 0.3;
-  box-shadow: none;
-  background: $gray;
-  border: 1px solid $gray;
-}
+
+
 
 
 .onoffswitch {
