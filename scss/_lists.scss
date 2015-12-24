@@ -9,6 +9,7 @@ nav {
       font-size: .7rem;
       a {
         text-decoration: none;
+        color: $dark-gray;
         &.active, &:hover {
           text-decoration: underline;
           color: $light-blue;

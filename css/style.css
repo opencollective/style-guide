@@ -142,6 +142,10 @@ p {
     line-height: 1rem;
     text-transform: uppercase; }
 
+a {
+  color: #7FADF2;
+  text-decoration: underline; }
+
 .button, form button, form input[type="submit"] {
   color: white;
   text-transform: uppercase;
@@ -344,11 +348,10 @@ input[type="radio"] {
     height: 40px;
     padding: 0;
     line-height: 40px;
-    font-size: 16px;
+    font-size: 1.3rem;
     color: white;
-    font-family: Trebuchet, Arial, sans-serif;
-    font-weight: bold;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    font-family: 'bold', sans-serif; }
   .onoffswitch-inner:before {
     content: "ON";
     padding-left: 12px;
@@ -386,7 +389,8 @@ nav ul {
     margin-right: 60px;
     font-size: .7rem; }
     nav ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #7A7B82; }
       nav ul li a.active, nav ul li a:hover {
         text-decoration: underline;
         color: #7FADF2;
@@ -467,14 +471,16 @@ nav ul {
 .icon-password:before {
   content: "o"; }
 
-.banner {
+.feedback {
   color: white;
+  padding: 1rem;
   box-sizing: border-box; }
-  .banner .error {
+  .feedback.error {
     background-color: #dd2663; }
-  .banner .notice {
-    background-color: #ffd62c; }
-  .banner .success {
+  .feedback.notice {
+    background-color: #fffbe1;
+    color: #cfa236; }
+  .feedback.success {
     background-color: #80d823; }
 
 body {

@@ -1,15 +1,17 @@
 // _feedback.scss
 
-.banner {
+.feedback {
   color: white;
+  padding: 1rem;
   @include border-box;
-  .error {
+  &.error {
     background-color: $red;
   }
-  .notice {
+  &.notice {
     background-color: $yellow;
+    color: $gold;
   }
-  .success {
+  &.success {
     background-color: $green;
   }
 }
