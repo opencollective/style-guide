@@ -119,28 +119,34 @@ html, body {
 h1 {
   font-size: 1.7rem;
   line-height: 1.9rem;
+  margin-top: 1rem;
   font-family: 'semibold', sans-serif; }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.7rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin-top: 1rem;
   text-transform: uppercase;
   font-family: 'semibold', sans-serif; }
 
 h3 {
   font-size: 1.3rem;
   line-height: 1.5rem;
-  text-transform: uppercase;
-  font-family: 'semibold', sans-serif; }
+  margin-top: 1rem;
+  font-family: 'bold', sans-serif; }
 
 p {
   font-size: 1.2rem;
   line-height: 1.4rem;
-  font-family: 'regular', sans-serif; }
+  font-family: 'regular', sans-serif;
+  margin-bottom: 1rem; }
+  p:last-of-type {
+    margin-bottom: 0; }
   p.meta {
     font-size: .7rem;
     line-height: 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0; }
 
 a {
   color: #7FADF2;
