@@ -36,3 +36,52 @@ section {
 article {
   margin-top: 4rem;
 }
+
+.swatch {
+  width: 150px;
+  height: 50px;
+  font-size: .7rem;
+  padding: .5rem;
+  margin-bottom: .3rem;
+  display: inline-block;
+  @include border-box;
+  &.gray {
+    background-color: $gray;
+  }
+  &.light-gray {
+    background-color: $light-gray;
+  }
+  &.darkest-gray {
+    background-color: $darkest-gray;
+  }
+  &.dark-gray {
+    background-color: $dark-gray;
+    color: white;
+  }
+  &.light-blue {
+    background-color: $light-blue;
+    color: white;
+  }
+  &.aqua {
+    background-color: $aqua;
+    color: white;
+  }
+  &.green {
+    background-color: $green;
+    color: white;
+  }
+  &.red {
+    background-color: $red;
+    color: white;
+  }
+  &.orange {
+    background-color: $orange;
+  }
+  &.yellow {
+    background-color: $yellow;
+  }
+  &.gold {
+    background-color: $gold;
+    color: white;
+  }
+}

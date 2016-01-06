@@ -272,3 +272,38 @@ input[type="radio"] {
     right: 0px;
   }
 }
+
+
+.avatar {
+  @include border-radius(50%);
+  @include transition;
+  background: url('../assets/default-avatar.png') center center no-repeat;
+  background-size: 100%;
+  width: 55px;
+  height: 55px;
+  //displaying purposes
+  display: inline-block;
+  .upload {
+    @include border-radius(50%);
+    background:rgba(255,255,255,.5) url('../assets/upload-photo.svg') center center no-repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.receipt {
+  background-color: $light-gray;
+  text-align: center;
+  color: $gray;
+  height: 298px;
+  @include border-box;
+  padding: 1.5rem;
+  //display purposes
+  margin-bottom: 1rem;
+  img {
+    max-width: 90px;
+    //display purposes
+    padding-top: 3rem;
+  }
+}
